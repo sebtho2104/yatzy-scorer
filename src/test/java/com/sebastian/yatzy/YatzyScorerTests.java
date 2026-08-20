@@ -13,4 +13,12 @@ public class YatzyScorerTests{
         int result = YatzyScorer.ones(dice);
         assertEquals(0, result);
     }
+
+    @Test
+    public void onePair_returnsHighestValue() {
+        int [] dice = {2, 2, 4, 6, 6};
+        int result = YatzyScorer.onePair(dice);
+        assertEquals(12, result);
+    }
+
 }
