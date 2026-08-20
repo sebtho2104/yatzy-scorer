@@ -9,7 +9,7 @@ public class YatzyScorerTests{
 
     @Test
     public void ones_returnsZeroWhenNoOnes() {
-        int [] dice = {2, 2, 4, 5, 3, 6};
+        int [] dice = {2, 2, 4, 5, 6};
         int result = YatzyScorer.ones(dice);
         assertEquals(0, result);
     }
